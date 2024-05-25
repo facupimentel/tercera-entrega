@@ -1,0 +1,208 @@
+//SASS PRINCIPAL
+
+
+
+//mobile first
+
+//reset
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+//body
+
+body{
+    background-color: rgb(255, 255, 255) ;
+    font-family: "Lexend Deca", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: 100;
+}
+
+//banner principal
+
+header {
+    background-color: #242424;
+    .bg-navbar {
+        .container-fluid{
+
+            .navbar-logo{
+                img{
+                    width: 30%;
+                }
+            }
+
+            .nav-menu{
+                .navbar-nav {
+                    margin: 0px 20px;
+                    gap: 15px;
+                }
+
+            }
+
+        }    
+        
+    }
+}
+
+
+/* CUERPO PRINCIPAL*/
+
+main {
+    text-align: center;
+    .box-one{
+        .texto{
+            margin: 40px 10px;
+            background-color: #242424;
+            color: whitesmoke;
+            padding: 15px;
+            border-radius: 3px;
+
+            h1 {
+                color: #A1EF00;
+            }
+        }
+
+        .grid-img {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(3, 30%);
+            margin: 0px 20px;
+            height: 90vh;
+
+            div {
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    border-radius: 2px;
+                }
+            }
+
+            .img-uno{
+                grid-column: 1;
+                grid-row: span 3;
+            }
+
+            .img-tres{
+                grid-row: span 2;
+            }
+        }
+
+    }
+
+    .links-pages{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 2px;
+        gap: 40px;
+        margin: 40px 0px;
+
+        div{
+            display: flex;
+            width: 95%;
+            margin: 5px 5px;
+            border-radius: 5px;
+            background-color: #242424;
+            color: whitesmoke;
+            font-size: 12px;
+            text-align: center;
+            align-items: center;
+        }
+    }
+}
+
+.links-pages{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 2px;
+    gap: 40px;
+    margin: 40px 0px;
+    
+    div{
+        display: flex;
+        width: 95%;
+        margin: 5px 5px;
+        border-radius: 5px;
+        background-color: #242424;
+        color: whitesmoke;
+        font-size: 12px;
+        text-align: center;
+        align-items: center; 
+
+        h2{
+            font-size: 14px;
+        }
+
+        img{
+            border-radius: 5px;
+            margin: 5px 5px;
+            width: 95%;
+        }
+    }
+
+    .container-links{
+        .link-text{
+            display: flex;
+            flex-direction: column;
+            margin-right: 15px;
+            
+            a {
+                text-decoration: none;
+                color: whitesmoke;
+                width: 60%;
+                padding: 12px
+            }
+
+            a:hover {
+                background-color: #A1EF00;
+                color: #242424;
+                border-radius: 15px;
+            }
+        }
+    }
+        
+}
+
+/* PIE DE PAGINA*/
+
+footer {
+    background-color: #242424;
+    color: whitesmoke;
+    text-align: center;
+    height: 40vh;
+
+    h3 {
+        padding: 10px;
+        font-size: 10px;
+    }
+
+    div {
+        padding: 10px;
+        margin: 30px 15px;
+        display: flex;
+        justify-content: space-evenly;
+        gap: 25px;
+        font-size: 13px;
+
+        img{
+            padding-top: 25px;
+            width: 50%;
+        }
+
+        a {
+            width: 40%;
+            text-decoration: none;
+            color: #A1EF00;
+        }
+    }
+}
+
+//imports
+@import "html/galeria";
+@import "html/profesores";
+@import "html/rutinas";

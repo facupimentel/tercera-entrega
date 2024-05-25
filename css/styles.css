@@ -1,684 +1,354 @@
-/* reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
-/* MOBILE FIRST */
-
-/* body */
 
 body {
-    background-color: rgb(255, 255, 255) ;
-    font-family: "Lexend Deca", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 100;
-    font-style: 100;
+  background-color: rgb(255, 255, 255);
+  font-family: "Lexend Deca", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: 100;
 }
 
-
-
-/* banner principal */
-
-.bg-navbar {
-    background-color: #242424;
-    
+header {
+  background-color: #242424;
+}
+header .bg-navbar .container-fluid .navbar-logo img {
+  width: 30%;
+}
+header .bg-navbar .container-fluid .nav-menu .navbar-nav {
+  margin: 0px 20px;
+  gap: 15px;
 }
 
-.nav-links {
-    margin: 0px 40px;
-}
-
-.navbar-logo {
-    width: 30%;
-}
-
-.navbar-logo img {
-    
-    width: 100%;
-}
-
-/* MAIN */
-
+/* CUERPO PRINCIPAL*/
 main {
-    text-align: center;
+  text-align: center;
 }
-
-main .box-one h1{
-    color: #A1EF00;
-}
-
-
 main .box-one .texto {
-    margin: 40px 10px;
-    background-color: #242424;
-    color: whitesmoke;
-    padding: 15px;
-    border-radius: 3px;
+  margin: 40px 10px;
+  background-color: #242424;
+  color: whitesmoke;
+  padding: 15px;
+  border-radius: 3px;
 }
-
-main .box-one .img-cbum img {
-    margin: 25px 5px;
-    width: 80%;
+main .box-one .texto h1 {
+  color: #A1EF00;
 }
-
-
-main .box-one .grid-img{
-    margin: 0px 20px;
-    height: 90vh;
-    display: grid;
-    grid-template-columns: 1fr 1fr ;
-    grid-template-rows:repeat(2, 50%) ;
-    
+main .box-one .grid-img {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 30%);
+  margin: 0px 20px;
+  height: 90vh;
 }
-
-main .box-one .grid-img img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 2px;
+main .box-one .grid-img div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 2px;
 }
-
 main .box-one .grid-img .img-uno {
-    grid-column: 1;
-    grid-row: span 2;
+  grid-column: 1;
+  grid-row: span 3;
 }
-
-
-/* section */
+main .box-one .grid-img .img-tres {
+  grid-row: span 2;
+}
+main .links-pages {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 2px;
+  gap: 40px;
+  margin: 40px 0px;
+}
+main .links-pages div {
+  display: flex;
+  width: 95%;
+  margin: 5px 5px;
+  border-radius: 5px;
+  background-color: #242424;
+  color: whitesmoke;
+  font-size: 12px;
+  text-align: center;
+  align-items: center;
+}
 
 .links-pages {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 2px;
-    gap: 40px;
-    margin: 40px 0px;
-
-    
-    
-    
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 2px;
+  gap: 40px;
+  margin: 40px 0px;
 }
-
 .links-pages div {
-    display: flex;
-    width: 95%;
-    margin: 5px 5px;
-    border-radius: 5px;
-    background-color: #242424;
-    color: whitesmoke;
-    font-size: 12px;
-    text-align: center;
-    align-items: center;
-    
+  display: flex;
+  width: 95%;
+  margin: 5px 5px;
+  border-radius: 5px;
+  background-color: #242424;
+  color: whitesmoke;
+  font-size: 12px;
+  text-align: center;
+  align-items: center;
 }
-
-
 .links-pages div h2 {
-    font-size: 14px;
-    
+  font-size: 14px;
 }
-
-
 .links-pages div img {
-    border-radius: 5px;
-    margin: 5px 5px;
-    width: 95%;
+  border-radius: 5px;
+  margin: 5px 5px;
+  width: 95%;
 }
-
-
 .links-pages .container-links .link-text {
-    display: flex;
-    flex-direction: column;
-    margin-right: 15px;
+  display: flex;
+  flex-direction: column;
+  margin-right: 15px;
+}
+.links-pages .container-links .link-text a {
+  text-decoration: none;
+  color: whitesmoke;
+  width: 60%;
+  padding: 12px;
+}
+.links-pages .container-links .link-text a:hover {
+  background-color: #A1EF00;
+  color: #242424;
+  border-radius: 15px;
 }
 
-
-.links-pages .container-links .link-text a{
-    text-decoration: none;
-    color: whitesmoke;
-    width: 60%;
-    padding: 12px
-}
-
-.links-pages .container-links .link-text a:hover{
-    background-color: #A1EF00;
-    color: #242424;
-    border-radius: 15px;
-}
-
-
-/* footer */
-
+/* PIE DE PAGINA*/
 footer {
-    background-color: #242424;
-    color: whitesmoke;
-    text-align: center;
-    height: 40vh;
+  background-color: #242424;
+  color: whitesmoke;
+  text-align: center;
+  height: 40vh;
 }
-
 footer h3 {
-    padding: 10px;
-    font-size: 10px;
+  padding: 10px;
+  font-size: 10px;
 }
-
-footer div img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
 footer div {
-    padding: 10px;
-    margin: 30px 15px;
-    display: flex;
-    justify-content: space-evenly;
-    gap: 25px;
-    font-size: 13px;
+  padding: 10px;
+  margin: 30px 15px;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 25px;
+  font-size: 13px;
 }
-
+footer div img {
+  padding-top: 25px;
+  width: 50%;
+}
 footer div a {
-    width: 100%;
-    text-decoration: none;
-    color: #A1EF00;
-    
-    
+  width: 40%;
+  text-decoration: none;
+  color: #A1EF00;
 }
 
-
-/* GALERIA */
-
+/* PAGE GALERIA */
 .galeria div h1 {
-    margin: 20px 3px;
-    background-color: #242424;
-    color: #A1EF00;
-    padding: 15px;
-    border-radius: 2px;
-    
+  margin: 20px 3px;
+  background-color: #242424;
+  color: #A1EF00;
+  padding: 15px;
+  border-radius: 2px;
 }
-
-.galeria .cuadro-uno img {
-    border-radius: 2px;
-    width: 100%;
+.galeria .adidas .cuadro-uno img {
+  border-radius: 2px;
+  width: 95%;
+  padding: 5px;
 }
-
+.galeria .adidas div h2 {
+  margin: 20px 3px;
+  background-color: #242424;
+  color: #A1EF00;
+  padding: 15px;
+  border-radius: 2px;
+}
+.galeria .adidas .cuadro-dos {
+  height: 130vh;
+  margin: 0px 10px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 33%);
+  gap: 5px;
+}
+.galeria .adidas .cuadro-dos img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 2px;
+}
+.galeria .adidas .cuadro-dos .dos-img-uno {
+  grid-column: 1;
+  grid-row: span 2;
+}
+.galeria .adidas .cuadro-dos .dos-img-cuatro {
+  grid-column: span 2;
+}
 .galeria div h2 {
-    margin: 20px 3px;
-    background-color: #242424;
-    color: #A1EF00;
-    padding: 15px;
-    border-radius: 2px;
+  margin: 20px 3px;
+  background-color: #242424;
+  color: #A1EF00;
+  padding: 15px;
+  border-radius: 2px;
+}
+.galeria .nike .cuadro-tres {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 33%);
+  margin: 0px 10px;
+  gap: 5px;
+}
+.galeria .nike .cuadro-tres img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 2px;
+}
+.galeria .nike .cuadro-tres .tres-img-uno {
+  grid-row: span 3;
+}
+.galeria .nike .cuadro-tres .tres-img-cuatro {
+  grid-column: 2;
+}
+.galeria div h2 {
+  margin: 20px 3px;
+  background-color: #242424;
+  color: #A1EF00;
+  padding: 15px;
+  border-radius: 2px;
+}
+.galeria .texto img {
+  width: 95%;
+  border-radius: 2px;
 }
 
-.galeria .cuadro-dos{
-    margin: 0px 10px;
-    display:grid;
-    grid-template-columns: repeat(2, 1fr) ;
-    grid-template-rows: repeat(3, 33%) ;
-    gap: 5px;
+/* PAGE PROFESORES */
+main .texto {
+  margin: 20px 3px;
+  background-color: #242424;
+  color: whitesmoke;
+  padding: 15px;
+  border-radius: 2px;
 }
-
-.galeria .cuadro-dos img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 2px;
+main .texto h1 {
+  color: #A1EF00;
 }
-
-.galeria .cuadro-dos .dos-img-uno {
-    grid-column: 1;
-    grid-row: span 2;
+main .cbum .card-profe {
+  background-color: #242424;
+  color: whitesmoke;
+  padding: 5px;
+  text-align: start;
 }
-
-.galeria .cuadro-dos .dos-img-cuatro {
-    grid-column: span 2;
+main .cbum .card-profe img {
+  margin: 5px 5px;
+  width: 40%;
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 10px;
 }
-
-
-.galeria .cuadro-tres {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr) ;
-    grid-template-rows: repeat(3, 33%) ;
-    margin: 0px 10px;
-    gap: 5px;
+main .cbum .card-profe h2 {
+  color: #A1EF00;
+  padding: 10px;
+  text-align: center;
 }
-
-.galeria .cuadro-tres img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 2px;
+main .fotos-cbum {
+  height: 60vh;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 50%);
+  margin: 5px 5px;
+  gap: 2px;
 }
-
-.galeria .cuadro-tres .tres-img-uno {
-    grid-row: span 3;
-}
-
-.galeria .cuadro-tres .tres-img-cuatro {
-    grid-column: 2;
-}
-
-
-.galeria .cuadro-cuatro img {
-    width: 100%;
-}
-
-.galeria .cuadro-cuatro p {
-    padding: 10px;
-}
-
-
-/* ENTRENAMIENTOS */
-
-/* profesores */
-
-main .presentacion {
-    padding: 5px;
-    margin: 20px 5px;
-}
-
-
-main .profe-uno, main .profe-dos {
-    display: flex;
-    background-color: #242424;
-    color: whitesmoke;
-    margin: 20px 0px;
-}
-
-main .profe-uno .textos, main .profe-dos .textos {
-    width: 100%;
-    padding: 4px;
-    font-size: 11px;
-}
-
-main .profe-uno .profe-cbum img, main .profe-dos .profe-canelo img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-main .fotos-cbum{
-    height: 60vh;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr) ;
-    grid-template-rows: repeat(2, 50%);
-    margin: 5px 5px;
-    gap: 2px;
-}
-
 main .fotos-cbum img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
-
 main .fotos-cbum .cbum-cuatro {
-    grid-column: span 3;
+  grid-column: span 3;
 }
-
+main .canelo {
+  margin: 25px 0px;
+}
+main .canelo .card-profe {
+  background-color: #242424;
+  color: whitesmoke;
+  padding: 5px;
+  text-align: start;
+}
+main .canelo .card-profe img {
+  margin: 5px 5px;
+  width: 40%;
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+main .canelo .card-profe h2 {
+  color: #A1EF00;
+  padding: 10px;
+  text-align: center;
+}
 main .fotos-canelo {
-    margin: 5px 5px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr) ;
-    grid-template-rows: repeat(3, 34%) ;
-    gap: 2px;
+  margin: 5px 5px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 34%);
+  gap: 2px;
+}
+main .fotos-canelo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+main .fotos-canelo .canelo-uno {
+  grid-row: span 3;
 }
 
-main .fotos-canelo img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+/* PAGE RUTINA */
+main .texto h1 {
+  margin: 10px 0px;
+  color: whitesmoke;
+}
+main .texto h2 {
+  margin: 15px 0px;
+  color: #A1EF00;
+}
+main .rutina-uno {
+  margin: 20px 0px;
+}
+main .rutina-uno .texto {
+  background-color: #242424;
+  color: whitesmoke;
+  margin: 20px 5px;
+  border-radius: 2px;
+  font-size: 13px;
+  padding: 5px;
+}
+main .rutina-uno table tr {
+  background-color: #242424;
+  border: 0.5px solid #A1EF00;
+  color: whitesmoke;
+}
+main .rutina-uno table tr td {
+  background-color: #242424;
+  border: 0.5px solid #A1EF00;
+  color: whitesmoke;
+}
+main .rutina-dos .textos {
+  background-color: #242424;
+  color: whitesmoke;
+  margin: 20px 5px;
+  border-radius: 2px;
+  font-size: 13px;
+  padding: 5px;
 }
 
-main .fotos-canelo .canelo-uno{
-    grid-row: span 3;
-}
-
-
-/* RUTINAS */
-
-main h1 {
-    margin: 18px 0px;
-}
-
-main h2 {
-    margin: 18px 0px;
-    color: #A1EF00;
-}
-
-
-
-main .rutina-uno table tr, main .rutina-uno table td {
-    border: 1px solid #A1EF00;
-    color: whitesmoke;
-}
-
-main .rutina-dos .texto, main .rutina-uno .texto {
-    background-color: #242424;
-    color: whitesmoke;
-    margin: 20px 5px; 
-    border-radius: 2px;
-    font-size: 13px;
-    padding: 5px;
-}
-
-main .rutina-uno table, main .rutina-dos table {
-    margin: 30px 0px;
-    color: whitesmoke;
-    background-color: #FFFFFF;
-    
-}
-
-main .rutina-dos table tr, main .rutina-dos table td {
-    border: 1px solid #A1EF00;
-    color: whitesmoke;
-    width: 30%;
-}
-
-main .rutina-uno .rutinas-img, main .rutina-dos .rutinas-img {
-    display:grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 100%;
-
-}
-
-main .rutina-uno .rutinas-img img, main .rutina-dos .rutinas-img img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-tr, td {
-    background-color: #242424;
-}
-
-
-/* CONTACTOS */
-
-
-main .redes img {
-    width: 40%;
-    margin: 15px 0px;
-}
-
-main .redes p {
-    color: #A1EF00;
-    font-size: 17px;
-    padding: 10px;
-}
-
-table {
-    background-color: #242424;
-}
-
-.redes, .formulario {
-    margin: 30px 0px;
-}
-
-.formulario{
-    display: flex;
-    justify-content: center;
-}
-
-.formulario div {
-    align-items: center;
-    background-color: #242424;
-    color: whitesmoke;
-    border-radius: 10px;
-    width: 97%;
-}
-
-
-
-
-input, select {
-    margin: 15px 0px;
-}
-
-
-
-.controles {
-    background-color: #d4d4d4;
-    width: 95%;
-    padding: 15px;
-    border-radius: 10px;
-    gap: 15px;
-    border: 0px;
-    
-}
-
-.boton {
-    background-color: #A1EF00;
-    width: 95%;
-    padding: 15px;
-    border-radius: 10px;
-    gap: 15px;
-    border: 100px;
-    color: #242424;
-}
-
-/* MQ DESKTOP */
-
-@media screen and (min-width:1280px){
-    /* header */
-    .navbar-logo img {
-        width: 30%;
-    }
-
-    /* main */
-    main .box-one {
-        display: flex;
-    }
-
-    main .box-one .texto {
-        width: 40%;
-    }
-
-    main .box-one .grid-img {
-        margin: 20px 15px;
-        padding: 20px;
-        
-    }
-
-    .links-pages {
-        display: flex;
-        flex-direction: row;
-    }
-
-    .links-pages .container-links{
-        display: flex;
-        flex-direction: column;
-        width: 80%;
-    }
-
-    footer div img {
-        width: 20%;
-    
-    }
-
-    /* GALERIA */
-
-    .galeria .cuadro-uno {
-        display: flex;
-        
-    }
-
-    .galeria .cuadro-uno div {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        border-radius: 2px;
-        padding: 5px;
-    }
-
-    .galeria .cuadro-dos img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        border-radius: 2px;
-    }
-
-    .galeria .cuadro-dos{
-        margin: 0px 50px;
-        display:grid;
-        grid-template-columns: repeat(3, 1fr) ;
-        grid-template-rows: repeat(2, 50%) ;
-        
-    }
-
-    .galeria .cuadro-tres {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr) ;
-        grid-template-rows: repeat(2, 50%) ;
-        margin: 0px 80px;
-        gap: 5px;
-    }
-
-    .galeria .cuadro-tres .tres-img-uno {
-        grid-row: span 2;
-    }
-
-    .galeria .cuadro-tres .tres-img-tres {
-        grid-column:2 / 3;
-        grid-row: 1;
-
-    }
-    .galeria .cuadro-tres .tres-img-dos {
-        grid-column: 3;
-        grid-row: span 2;
-    }
-
-    .galeria .cuadro-cuatro {
-        display: flex;
-    }
-
-    .galeria .cuadro-cuatro img {
-        margin: 0px 80px;
-        width: 50%;
-    }
-
-    .galeria .cuadro-cuatro p {
-        font-size: 20px;
-        margin: 0px 80px;
-    }
-
-    /* ENTRENADORES */
-
-    
-
-    main .profe-uno .profe-cbum img, main .profe-dos .profe-canelo img{
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-
-    main .profe-uno, main .profe-dos {
-        display: flex;
-        align-items: center;
-        color: whitesmoke;
-        margin: 20px 120px;
-        
-        
-        
-    }
-
-    main .profe-cbum, main .profe-canelo{ 
-         width: 35%;
-    }
-    
-    main .profe-uno .textos, main .profe-dos .textos {
-        margin: 45px 0px;
-        font-size: 15px;
-        padding: 15px;
-        width: 70%;
-        background-color: #242424;
-        
-    }
-
-    main .profe-uno .textos h2, main .profe-dos .textos h2 {
-        font-size: 70px;
-    }
-
-    main .profe-uno .textos p, main .profe-dos .textos p{
-        margin: 50px 15px;
-    }
-
-    main .fotos-cbum{
-        height: 60vh;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr) ;
-        grid-template-rows: repeat(2, 50%);
-        margin: 5px 30px;
-        gap: 2px;
-    }
-
-    main .fotos-cbum .cbum-uno {
-        grid-row: span 2;
-    }
-
-    main .fotos-cbum .cbum-dos{
-        grid-column: 3;
-        grid-row: span 2;
-    }
-
-    main .fotos-cbum .cbum-tres {
-        grid-column: 2;
-        grid-row: 1;
-    }
-
-    main .fotos-cbum .cbum-cuatro {
-        grid-column: 2;
-    }
-    
-    main .fotos-canelo {
-        height: 80vh;
-        margin: 5px 30px;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr) ;
-        grid-template-rows: repeat(2, 50%) ;
-        gap: 2px;
-    }
-
-
-    main .fotos-canelo .canelo-uno {
-        grid-row: span 2;
-    }
-
-    main .fotos-canelo .canelo-tres {
-        grid-row: span 2;
-    }
-
-    /* RUTINA */
-
-    main .rutina-uno .rutinas-img img, main .rutina-dos .rutinas-img img {
-        width: 40%;
-
-    }
-
-    main .rutina-uno table, main .rutina-dos table {
-        display: flex;
-        justify-content: center;
-        width: 100%;
-        height: 100%;
-    }
-
-    tr, td {
-        padding: 20px;
-        background-color: #242424;
-    }
-
-    /* CONTACTOS */
-
-    main .redes {
-        display: flex;
-    }
-
-    .controles {
-        width: 65%;
-    }
-    .formulario div {
-        width: 70%;
-    }
-
-}
+/*# sourceMappingURL=styles.css.map */

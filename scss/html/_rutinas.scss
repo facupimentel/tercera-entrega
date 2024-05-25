@@ -1,0 +1,61 @@
+/* PAGE RUTINA */
+
+main {
+    .texto{
+        h1{
+        margin: 10px 0px;
+        color: whitesmoke;
+        }
+
+        h2{
+            margin: 15px 0px;
+            color: #A1EF00;
+        }
+    }
+
+
+    .rutina-uno {
+        margin: 20px 0px;
+        .texto{
+            background-color: #242424;
+            color: whitesmoke;
+            margin: 20px 5px; 
+            border-radius: 2px;
+            font-size: 13px;
+            padding: 5px;
+        }
+        
+
+        table {
+            
+            tr {
+                background-color: #242424;
+                border: 0.5px solid #A1EF00;
+                color: whitesmoke;
+
+                td {
+                    background-color: #242424;
+                    border: 0.5px solid #A1EF00;
+                    color: whitesmoke;
+                    
+                }
+            }
+
+            
+        }
+
+    }
+
+    .rutina-dos{
+
+        .textos{
+            background-color: #242424;
+            color: whitesmoke;
+            margin: 20px 5px; 
+            border-radius: 2px;
+            font-size: 13px;
+            padding: 5px;
+        }
+    }
+
+}
