@@ -1,7 +1,4 @@
 //SASS PRINCIPAL
-
-
-
 //mobile first
 
 //reset
@@ -68,7 +65,7 @@ main {
         .grid-img {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: repeat(3, 30%);
+            grid-template-rows: repeat(3, 34%);
             margin: 0px 20px;
             height: 90vh;
 
@@ -88,6 +85,14 @@ main {
 
             .img-tres{
                 grid-row: span 2;
+            }
+            
+            .img-cuatro {
+                display: none;
+            }
+
+            .img-cinco {
+                display: none;
             }
         }
 
@@ -111,6 +116,33 @@ main {
             font-size: 12px;
             text-align: center;
             align-items: center;
+
+            .link-text {
+                display: flex;
+                flex-direction: column;
+                margin-right: 15px;
+                h2 {
+                    font-size: 14px;
+                }
+                img {
+                    border-radius: 5px;
+                    margin: 5px 5px;
+                    width: 95%;
+                }
+
+                a {
+                    text-decoration: none;
+                    color: whitesmoke;
+                    width: 60%;
+                    padding: 12px
+                }
+
+                a:hover {
+                    background-color: #A1EF00;
+                    color: #242424;
+                    border-radius: 15px;
+                }
+            }
         }
     }
 }
@@ -206,3 +238,240 @@ footer {
 @import "html/galeria";
 @import "html/profesores";
 @import "html/rutinas";
+@import "html/contactos";
+
+/* MQ tablets */
+
+@media screen and (min-width:768px) {
+
+    /* inicio */
+    main {
+        .box-one {
+            .texto{
+                font-size: 15px;
+
+                h1 {
+                    font-size:45px;
+                }
+            }
+
+            .grid-img {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(4, 25%);
+                margin: 0px 20px;
+                height: 90vh;
+
+                .img-tres {
+                    grid-row: span 3;
+                }
+
+                .img-cuatro {
+                    display: block;
+                }
+                
+            }
+        }
+
+        .links-pages {
+            div {
+                display: flex;
+                flex-direction: column;
+                width: 70%;
+                .link-img {
+                    img {
+                        width: 100%;
+                        margin: 12px;
+                    }
+                }
+
+                .link-text{
+                    h2 {
+                        font-size: 15px;
+                        margin: 12px 0px;
+                    }
+
+                    a {
+                        font-size: 15px;
+                        margin: 30px 0px;
+                    }
+                }
+            }
+        }
+
+        
+    }
+
+    footer {
+        div {
+            a {
+                img {
+                    padding-top: 10px;
+                    width: 35%;
+                }
+            }
+        }
+
+        div {
+            a {
+                padding: 5px 0px;
+                font-size: 13px;
+            }
+        }
+
+        h3 {
+            font-size: 10px;
+        }
+    }
+
+    /* indumentaria */
+
+    .galeria {
+        .adidas{
+            .cuadro-uno {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr) ;
+                grid-template-rows: repeat(2, 50%);
+
+                div {
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+            }
+        }
+
+        .nike {
+            .texto {
+                font-size: 15px;
+            }
+
+            img {
+                width: 80%;
+            }
+
+        }
+    }
+
+    /* profesores */
+
+    main {
+        .cbum {
+            .card-profe {
+                img {
+                    width: 27%;
+                }
+            }
+        }
+
+        .canelo {
+            .card-profe {
+                img {
+                    width: 27%;
+                }
+            }
+
+            .fotos-canelo {
+                height: 80vh;
+                margin: 5px 5px;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr) ;
+                grid-template-rows: repeat(3, 34%) ;
+                gap: 2px;
+
+                .canelo-uno {
+                    grid-row: span 2;
+                }
+
+                .canelo-tres {
+                    grid-row: span 2;
+                }
+
+            }
+        }
+    }
+
+    /* rutinas */
+
+    main {
+        section {
+            .rutina-uno {
+                .texto {
+                    font-size: 15px;
+                }
+
+                .tabla-uno {
+                    table {
+                        .dias {
+                            td {
+                                font-size: 30px;
+                            }
+                        }
+
+                        tr {
+                            td {
+                                font-size: 22px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .rutina-dos {
+                .tabla-dos {
+                    table {
+                        .dias {
+                            td {
+                                font-size: 30px;
+                            }
+                        }
+
+                        tr {
+                            td {
+                                font-size: 22px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /* contactos */
+    main {
+        .contactos{
+            .redes {
+                h1 {
+                    padding-top: 25px;
+                    font-size: 30px;
+                }
+                div {
+                    display: flex;
+                    .logo {
+                        display: block;
+                        a {
+                            img {
+                                padding: 15px;
+                                width: 60%;
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+
+        .inscripcion {
+            .formulario {
+                h1 {
+                    padding: 15px;
+                    font-size: 30px;
+                }
+            }
+        }
+    }
+}
+
+/* MQ desktop */

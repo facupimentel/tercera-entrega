@@ -26,25 +26,42 @@ main {
         }
         
 
-        table {
-            
-            tr {
-                background-color: #242424;
-                border: 0.5px solid #A1EF00;
-                color: whitesmoke;
-
-                td {
-                    background-color: #242424;
-                    border: 0.5px solid #A1EF00;
-                    color: whitesmoke;
+        .tabla-uno {
+            display: flex;
+            justify-content: center;
+            table {
+                
+                .dias {
+                    border: 0.5px solid ;
                     
+                    td {
+                        background-color: #242424;
+                        border: 0.5px solid #242424;
+                        color: #A1EF00;
+                        padding: 8px;
+                        font-size: 15px;
+                        
+                    }
+                }
+
+                tr {
+                    border: 0.5px solid ;
+                    
+                    td {
+                        background-color: #242424;
+                        border: 0.5px solid #242424;
+                        color: whitesmoke;
+                        padding: 8px;
+                        font-size: 15px;
+                        
+                    }
                 }
             }
-
-            
+                
         }
 
     }
+    
 
     .rutina-dos{
 
@@ -56,6 +73,42 @@ main {
             font-size: 13px;
             padding: 5px;
         }
+
+        .tabla-dos {
+            display: flex;
+            justify-content: center;
+            table {
+                
+                .dias {
+                    border: 0.5px solid ;
+                    
+                    td {
+                        background-color: #242424;
+                        border: 0.5px solid #242424;
+                        color: #A1EF00;
+                        padding: 8px;
+                        font-size: 15px;
+                        
+                    }
+                }
+
+                tr {
+                    border: 0.5px solid ;
+                    
+                    td {
+                        background-color: #242424;
+                        border: 0.5px solid #242424;
+                        color: whitesmoke;
+                        padding: 8px;
+                        font-size: 15px;
+                        
+                    }
+                }
+            }
+                
+        }
+
+        
     }
 
 }
