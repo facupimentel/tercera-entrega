@@ -24,36 +24,28 @@ main {
             font-size: 13px;
             padding: 5px;
         }
-        
-
         .tabla-uno {
             display: flex;
             justify-content: center;
-            table {
-                
+            table {  
                 .dias {
-                    border: 0.5px solid ;
-                    
+                    border: 0.5px solid ;     
                     td {
                         background-color: #242424;
                         border: 0.5px solid #242424;
                         color: #A1EF00;
                         padding: 8px;
-                        font-size: 15px;
-                        
+                        font-size: 13px;  
                     }
                 }
-
                 tr {
-                    border: 0.5px solid ;
-                    
+                    border: 0.5px solid ;  
                     td {
                         background-color: #242424;
                         border: 0.5px solid #242424;
                         color: whitesmoke;
                         padding: 8px;
-                        font-size: 15px;
-                        
+                        font-size: 11px;     
                     }
                 }
             }
@@ -61,10 +53,7 @@ main {
         }
 
     }
-    
-
     .rutina-dos{
-
         .textos{
             background-color: #242424;
             color: whitesmoke;
@@ -73,12 +62,10 @@ main {
             font-size: 13px;
             padding: 5px;
         }
-
         .tabla-dos {
             display: flex;
             justify-content: center;
-            table {
-                
+            table { 
                 .dias {
                     border: 0.5px solid ;
                     
@@ -87,11 +74,9 @@ main {
                         border: 0.5px solid #242424;
                         color: #A1EF00;
                         padding: 8px;
-                        font-size: 15px;
-                        
+                        font-size: 13px;  
                     }
                 }
-
                 tr {
                     border: 0.5px solid ;
                     
@@ -100,7 +85,7 @@ main {
                         border: 0.5px solid #242424;
                         color: whitesmoke;
                         padding: 8px;
-                        font-size: 15px;
+                        font-size: 11px;
                         
                     }
                 }

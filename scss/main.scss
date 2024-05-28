@@ -24,21 +24,22 @@ header {
     background-color: #242424;
     .bg-navbar {
         .container-fluid{
-
-            .navbar-logo{
-                img{
-                    width: 30%;
+            .nav-menu {
+                .bg-navbar{ 
+                     background-color: #242424;
                 }
-            }
-
-            .nav-menu{
                 .navbar-nav {
                     margin: 0px 20px;
                     gap: 15px;
                 }
-
             }
 
+            .navbar-logo{
+                width: 70px;
+                img{
+                    width: 100%;
+                }
+            }
         }    
         
     }
@@ -92,6 +93,9 @@ main {
             }
 
             .img-cinco {
+                display: none;
+            }
+            .img-seis {
                 display: none;
             }
         }
@@ -242,7 +246,7 @@ footer {
 
 /* MQ tablets */
 
-@media screen and (min-width:768px) {
+@media screen and (min-width:767px) {
 
     /* inicio */
     main {
@@ -303,11 +307,12 @@ footer {
     }
 
     footer {
+        height: 25vh;
         div {
             a {
                 img {
                     padding-top: 10px;
-                    width: 35%;
+                    width: 25%;
                 }
             }
         }
@@ -340,6 +345,15 @@ footer {
                         object-fit: cover;
                     }
                 }
+                .cuadro-depaul {
+                    display: block;
+                }
+            }
+
+            .cuadro-dos {
+                .dos-img-cinco {
+                    display: none;
+                }
             }
         }
 
@@ -360,16 +374,19 @@ footer {
     main {
         .cbum {
             .card-profe {
+                align-items: center;
+                width: 100%;
                 img {
-                    width: 27%;
+                    width: 24%;
                 }
             }
         }
 
         .canelo {
             .card-profe {
+                width: 100%;
                 img {
-                    width: 27%;
+                    width: 24%;
                 }
             }
 
@@ -440,8 +457,8 @@ footer {
     }
 
     /* contactos */
-    main {
-        .contactos{
+    .contactos {
+        section{
             .redes {
                 h1 {
                     padding-top: 25px;
@@ -465,6 +482,7 @@ footer {
 
         .inscripcion {
             .formulario {
+                padding: 25px;
                 h1 {
                     padding: 15px;
                     font-size: 30px;
@@ -475,3 +493,283 @@ footer {
 }
 
 /* MQ desktop */
+
+@media screen and (min-width:1280px) {
+    /* inicio */
+    header {
+        .bg-navbar{
+            .container-fluid{
+                .navbar-logo{
+                    width: 5%;
+                }
+                .nav-menu {
+                    margin-left: 320px;
+                }
+            }
+        }
+    }
+
+    main {
+        .box-one {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            .texto {
+                width: 60%;
+                font-size: 15px;
+            }
+
+            .grid-img {
+                padding: 15px;
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                grid-template-rows: repeat(3, 33%);
+                margin: 0px 20px;
+                height: 80vh;
+                .img-uno {
+                    grid-row: 2 / 4;
+                }
+
+                .img-dos {
+                    grid-column: 1 / 3;
+                }
+
+                .img-tres {
+                    grid-row: 2 / 4;
+                }
+                
+                .img-cuatro {
+                    grid-column: span 2;
+                }
+
+                .img-cinco {
+                    display: block;
+                    grid-row: 2 / 4;
+                }
+                .img-seis {
+                    display: block;
+                    grid-row: span 2;
+                }
+            }
+
+        }
+
+        .links-pages {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            div{ 
+                width: 90%;
+                .link-img {
+                    img {
+                        width: 100%;
+                        object-fit: cover;
+                    }
+                }
+            }
+        }
+    }
+
+    footer {
+        height: 40vh;
+        div {
+            a {
+                width: 5%;
+                padding: 10px;
+                img {
+                    width: 85%;
+                }
+            }
+        }
+    }
+
+    /* galeria */
+
+    .galeria {
+        .adidas {
+            .cuadro-uno {
+                display: flex;
+            }
+
+            .cuadro-dos {
+                height: 80vh;
+                display:grid;
+                grid-template-columns: repeat(4, 1fr) ;
+                grid-template-rows: repeat(2, 50%) ;
+
+                .dos-img-dos {
+                    grid-column: span 1;
+                }
+                .dos-img-cinco {
+                    display: block;
+                    grid-column: 4;
+                    grid-row: 1 / 3;
+                }
+            }
+        }
+        .nike {
+            .cuadro-tres {
+                height: 80vh;
+                display: grid;
+                grid-template-columns: repeat(4, 1fr) ;
+                grid-template-rows: repeat(2, 50%) ;
+
+                .tres-img-uno {
+                    grid-row: span 2;
+                }
+                .tres-img-dos {
+                    grid-row: span 2;
+                }
+                .tres-img-tres {
+                    grid-row: span 2;
+                }
+                .tres-img-cuatro {
+                    grid-column: 4;
+                    grid-row: span 2;
+                }
+            }
+
+            .texto {
+                display: flex;
+                align-items: center;
+                p {
+                    padding: 15px;
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+
+    /* profesores */ 
+
+    main {
+        .cbum {
+            display: flex;
+            justify-content: center;
+            .card-profe {
+                width: 35%;
+                img {
+                    margin: 15px;
+                    width: 35%;
+                }
+            }
+            .fotos-cbum {
+                height: 67vh;
+                display: grid;
+                grid-template-columns: repeat(3, 1fr) ;
+                grid-template-rows: repeat(2, 50%);
+            }
+        }
+
+        .canelo {
+           display: flex;
+           justify-content: center;
+           
+           .card-profe {
+            width: 35%;
+            img {
+                margin: 15px;
+                width: 35%;
+            }
+           }
+
+           .fotos-canelo {
+                width: 80vh;
+                display: grid;
+                grid-template-columns: repeat(3, 1fr) ;
+                grid-template-rows: repeat(2, 50%);
+           }
+            
+        }
+          
+            
+    }
+    
+    /* rutinas */
+
+    main {
+        .rutina-uno {
+            .tabla-uno{
+                table{
+                    .dias{
+                        td {
+                           padding: 5px;
+                        }
+                    }
+                    tr {
+                        td {
+                            padding: 10px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .rutina-dos {
+            .tabla-dos{
+                table{
+                    .dias{
+                        td {
+                           padding: 10px;
+                        }
+                    }
+                    tr {
+                        td {
+                            padding: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /* contactos */
+
+    .contactos {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin: 20px 0px;
+        section {
+            display: flex;
+            
+            .redes {
+                width: 100%;
+                height: 100%;
+                h1 {
+                    font-size: 20px;
+                }
+                div {
+                    align-items: center;
+                    display: flex;
+                    flex-direction: column;
+                    .logo {
+                        a {
+                            img {
+                                width: 15%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .inscripcion {
+            display: flex;
+            .formulario {
+                width: 100%;
+                height: 100%;
+                margin: 20px 0px;
+                padding: 25px;
+                border-radius: 2px;
+                h1 {
+                    font-size: 20px; 
+                }
+                form {
+                    height: 90%;
+                }
+            }
+        }
+    }
+}

@@ -15,12 +15,18 @@ body {
 header {
   background-color: #242424;
 }
-header .bg-navbar .container-fluid .navbar-logo img {
-  width: 30%;
+header .bg-navbar .container-fluid .nav-menu .bg-navbar {
+  background-color: #242424;
 }
 header .bg-navbar .container-fluid .nav-menu .navbar-nav {
   margin: 0px 20px;
   gap: 15px;
+}
+header .bg-navbar .container-fluid .navbar-logo {
+  width: 70px;
+}
+header .bg-navbar .container-fluid .navbar-logo img {
+  width: 100%;
 }
 
 /* CUERPO PRINCIPAL*/
@@ -61,6 +67,9 @@ main .box-one .grid-img .img-cuatro {
   display: none;
 }
 main .box-one .grid-img .img-cinco {
+  display: none;
+}
+main .box-one .grid-img .img-seis {
   display: none;
 }
 main .links-pages {
@@ -193,6 +202,9 @@ footer div a {
   width: 95%;
   padding: 5px;
 }
+.galeria .adidas .cuadro-uno .cuadro-depaul {
+  display: none;
+}
 .galeria .adidas div h2 {
   margin: 20px 3px;
   background-color: #242424;
@@ -220,6 +232,9 @@ footer div a {
 }
 .galeria .adidas .cuadro-dos .dos-img-cuatro {
   grid-column: span 2;
+}
+.galeria .adidas .cuadro-dos .dos-img-cinco {
+  display: none;
 }
 .galeria div h2 {
   margin: 20px 3px;
@@ -276,6 +291,7 @@ main .cbum .card-profe {
   color: whitesmoke;
   padding: 5px;
   text-align: start;
+  border-radius: 2px;
 }
 main .cbum .card-profe img {
   margin: 5px 5px;
@@ -313,6 +329,7 @@ main .canelo .card-profe {
   color: whitesmoke;
   padding: 5px;
   text-align: start;
+  border-radius: 2px;
 }
 main .canelo .card-profe img {
   margin: 5px 5px;
@@ -374,7 +391,7 @@ main .rutina-uno .tabla-uno table .dias td {
   border: 0.5px solid #242424;
   color: #A1EF00;
   padding: 8px;
-  font-size: 15px;
+  font-size: 13px;
 }
 main .rutina-uno .tabla-uno table tr {
   border: 0.5px solid;
@@ -384,7 +401,7 @@ main .rutina-uno .tabla-uno table tr td {
   border: 0.5px solid #242424;
   color: whitesmoke;
   padding: 8px;
-  font-size: 15px;
+  font-size: 11px;
 }
 main .rutina-dos .textos {
   background-color: #242424;
@@ -406,7 +423,7 @@ main .rutina-dos .tabla-dos table .dias td {
   border: 0.5px solid #242424;
   color: #A1EF00;
   padding: 8px;
-  font-size: 15px;
+  font-size: 13px;
 }
 main .rutina-dos .tabla-dos table tr {
   border: 0.5px solid;
@@ -416,20 +433,20 @@ main .rutina-dos .tabla-dos table tr td {
   border: 0.5px solid #242424;
   color: whitesmoke;
   padding: 8px;
-  font-size: 15px;
+  font-size: 11px;
 }
 
 /* PAGE CONTACTOS */
-main {
+.contactos {
   display: flex;
   justify-content: center;
   flex-direction: column;
 }
-main .contactos {
+.contactos section {
   display: flex;
   justify-content: center;
 }
-main .contactos .redes {
+.contactos section .redes {
   color: #A1EF00;
   background-color: #242424;
   margin: 20px 0px;
@@ -437,20 +454,21 @@ main .contactos .redes {
   width: 95%;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
-main .contactos .redes h1 {
-  font-size: 25px;
+.contactos section .redes h1 {
+  padding: 10px;
+  font-size: 20px;
 }
-main .contactos .redes div {
+.contactos section .redes div {
   margin: 20px 0px;
 }
-main .contactos .redes div a img {
+.contactos section .redes div a img {
   width: 15%;
 }
-main .inscripcion {
+.contactos .inscripcion {
   display: flex;
   justify-content: center;
 }
-main .inscripcion .formulario {
+.contactos .inscripcion .formulario {
   width: 95%;
   align-content: center;
   background-color: #242424;
@@ -458,26 +476,30 @@ main .inscripcion .formulario {
   padding: 25px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
-main .inscripcion .formulario form {
+.contactos .inscripcion .formulario h1 {
+  padding: 10px;
+  font-size: 20px;
+}
+.contactos .inscripcion .formulario form {
   display: flex;
   justify-content: center;
   flex-direction: column;
 }
-main .inscripcion .formulario form .controles {
-  padding: 8px;
+.contactos .inscripcion .formulario form .controles {
+  padding: 5px;
   border-radius: 20px;
   margin: 15px 0px;
   background-color: #d4d4d4;
 }
-main .inscripcion .formulario form .boton {
-  padding: 15px;
+.contactos .inscripcion .formulario form .boton {
+  padding: 10px;
   background-color: #A1EF00;
   border-radius: 10px;
   color: #242424;
 }
 
 /* MQ tablets */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 767px) {
   /* inicio */
   main .box-one .texto {
     font-size: 15px;
@@ -515,9 +537,12 @@ main .inscripcion .formulario form .boton {
     font-size: 15px;
     margin: 30px 0px;
   }
+  footer {
+    height: 25vh;
+  }
   footer div a img {
     padding-top: 10px;
-    width: 35%;
+    width: 25%;
   }
   footer div a {
     padding: 5px 0px;
@@ -537,6 +562,12 @@ main .inscripcion .formulario form .boton {
     height: 100%;
     object-fit: cover;
   }
+  .galeria .adidas .cuadro-uno .cuadro-depaul {
+    display: block;
+  }
+  .galeria .adidas .cuadro-dos .dos-img-cinco {
+    display: none;
+  }
   .galeria .nike .texto {
     font-size: 15px;
   }
@@ -544,11 +575,18 @@ main .inscripcion .formulario form .boton {
     width: 80%;
   }
   /* profesores */
+  main .cbum .card-profe {
+    align-items: center;
+    width: 100%;
+  }
   main .cbum .card-profe img {
-    width: 27%;
+    width: 24%;
+  }
+  main .canelo .card-profe {
+    width: 100%;
   }
   main .canelo .card-profe img {
-    width: 27%;
+    width: 24%;
   }
   main .canelo .fotos-canelo {
     height: 80vh;
@@ -581,25 +619,230 @@ main .inscripcion .formulario form .boton {
     font-size: 22px;
   }
   /* contactos */
-  main .contactos .redes h1 {
+  .contactos section .redes h1 {
     padding-top: 25px;
     font-size: 30px;
   }
-  main .contactos .redes div {
+  .contactos section .redes div {
     display: flex;
   }
-  main .contactos .redes div .logo {
+  .contactos section .redes div .logo {
     display: block;
   }
-  main .contactos .redes div .logo a img {
+  .contactos section .redes div .logo a img {
     padding: 15px;
     width: 60%;
   }
-  main .inscripcion .formulario h1 {
+  .contactos .inscripcion .formulario {
+    padding: 25px;
+  }
+  .contactos .inscripcion .formulario h1 {
     padding: 15px;
     font-size: 30px;
   }
 }
 /* MQ desktop */
+@media screen and (min-width: 1280px) {
+  /* inicio */
+  header .bg-navbar .container-fluid .navbar-logo {
+    width: 5%;
+  }
+  header .bg-navbar .container-fluid .nav-menu {
+    margin-left: 320px;
+  }
+  main .box-one {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  main .box-one .texto {
+    width: 60%;
+    font-size: 15px;
+  }
+  main .box-one .grid-img {
+    padding: 15px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 33%);
+    margin: 0px 20px;
+    height: 80vh;
+  }
+  main .box-one .grid-img .img-uno {
+    grid-row: 2/4;
+  }
+  main .box-one .grid-img .img-dos {
+    grid-column: 1/3;
+  }
+  main .box-one .grid-img .img-tres {
+    grid-row: 2/4;
+  }
+  main .box-one .grid-img .img-cuatro {
+    grid-column: span 2;
+  }
+  main .box-one .grid-img .img-cinco {
+    display: block;
+    grid-row: 2/4;
+  }
+  main .box-one .grid-img .img-seis {
+    display: block;
+    grid-row: span 2;
+  }
+  main .links-pages {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  main .links-pages div {
+    width: 90%;
+  }
+  main .links-pages div .link-img img {
+    width: 100%;
+    object-fit: cover;
+  }
+  footer {
+    height: 40vh;
+  }
+  footer div a {
+    width: 5%;
+    padding: 10px;
+  }
+  footer div a img {
+    width: 85%;
+  }
+  /* galeria */
+  .galeria .adidas .cuadro-uno {
+    display: flex;
+  }
+  .galeria .adidas .cuadro-dos {
+    height: 80vh;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 50%);
+  }
+  .galeria .adidas .cuadro-dos .dos-img-dos {
+    grid-column: span 1;
+  }
+  .galeria .adidas .cuadro-dos .dos-img-cinco {
+    display: block;
+    grid-column: 4;
+    grid-row: 1/3;
+  }
+  .galeria .nike .cuadro-tres {
+    height: 80vh;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 50%);
+  }
+  .galeria .nike .cuadro-tres .tres-img-uno {
+    grid-row: span 2;
+  }
+  .galeria .nike .cuadro-tres .tres-img-dos {
+    grid-row: span 2;
+  }
+  .galeria .nike .cuadro-tres .tres-img-tres {
+    grid-row: span 2;
+  }
+  .galeria .nike .cuadro-tres .tres-img-cuatro {
+    grid-column: 4;
+    grid-row: span 2;
+  }
+  .galeria .nike .texto {
+    display: flex;
+    align-items: center;
+  }
+  .galeria .nike .texto p {
+    padding: 15px;
+    font-size: 20px;
+  }
+  /* profesores */
+  main .cbum {
+    display: flex;
+    justify-content: center;
+  }
+  main .cbum .card-profe {
+    width: 35%;
+  }
+  main .cbum .card-profe img {
+    margin: 15px;
+    width: 35%;
+  }
+  main .cbum .fotos-cbum {
+    height: 67vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 50%);
+  }
+  main .canelo {
+    display: flex;
+    justify-content: center;
+  }
+  main .canelo .card-profe {
+    width: 35%;
+  }
+  main .canelo .card-profe img {
+    margin: 15px;
+    width: 35%;
+  }
+  main .canelo .fotos-canelo {
+    width: 80vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 50%);
+  }
+  /* rutinas */
+  main .rutina-uno .tabla-uno table .dias td {
+    padding: 5px;
+  }
+  main .rutina-uno .tabla-uno table tr td {
+    padding: 10px;
+  }
+  main .rutina-dos .tabla-dos table .dias td {
+    padding: 10px;
+  }
+  main .rutina-dos .tabla-dos table tr td {
+    padding: 10px;
+  }
+  /* contactos */
+  .contactos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 20px 0px;
+  }
+  .contactos section {
+    display: flex;
+  }
+  .contactos section .redes {
+    width: 100%;
+    height: 100%;
+  }
+  .contactos section .redes h1 {
+    font-size: 20px;
+  }
+  .contactos section .redes div {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .contactos section .redes div .logo a img {
+    width: 15%;
+  }
+  .contactos .inscripcion {
+    display: flex;
+  }
+  .contactos .inscripcion .formulario {
+    width: 100%;
+    height: 100%;
+    margin: 20px 0px;
+    padding: 25px;
+    border-radius: 2px;
+  }
+  .contactos .inscripcion .formulario h1 {
+    font-size: 20px;
+  }
+  .contactos .inscripcion .formulario form {
+    height: 90%;
+  }
+}
 
 /*# sourceMappingURL=styles.css.map */

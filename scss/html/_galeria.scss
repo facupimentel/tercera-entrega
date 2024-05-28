@@ -17,6 +17,10 @@
                 width: 95%;
                 padding: 5px;
             }
+
+            .cuadro-depaul {
+                display: none;
+            }
         }
         
         div {
@@ -51,6 +55,10 @@
 
             .dos-img-cuatro {
                 grid-column: span 2;
+            }
+
+            .dos-img-cinco {
+                display: none;
             }
         }
     }
