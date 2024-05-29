@@ -27,6 +27,7 @@ body{
 
 header {
     background-color: #242424;
+    box-shadow: 0 0 20px rgba(0 , 0, 0, 0.2);
     .bg-navbar {
         .container-fluid{
             .nav-menu {
@@ -56,6 +57,7 @@ header {
 main {
     text-align: center;
     .box-one{
+        box-shadow: 0 0 20px rgba(0 , 0, 0, 0.2);
         .texto{
             @include estilos (40px 10px, 3px, 18px);
             background-color: $color-principal;
@@ -68,6 +70,7 @@ main {
         }
 
         .grid-img {
+            box-shadow: 0 0 20px rgba(0 , 0, 0, 0.2);
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             grid-template-rows: repeat(3, 34%);
@@ -107,6 +110,7 @@ main {
     }
 
     .links-pages{
+        box-shadow: 0 0 20px rgba(0 , 0, 0, 0.2);
         @include flex-column;
         align-items: center;
         border-radius: 5px;
@@ -114,6 +118,7 @@ main {
         margin: 40px 0px;
 
         div{
+            box-shadow: 0 0 20px rgba(0 , 0, 0, 0.2);
             display: flex;
             width: 95%;
             @include estilos (5px 5px, 5px, 12px);
@@ -149,6 +154,7 @@ main {
 }
 
 .links-pages{
+    box-shadow: 0 0 20px rgba(0 , 0, 0, 0.2);
     @include flex-column;
     align-items: center;
     border-radius: 2px;
@@ -198,6 +204,7 @@ main {
 /* PIE DE PAGINA*/
 
 footer {
+    box-shadow: 0 0 20px rgba(0 , 0, 0, 0.2);
     background-color: $color-principal;
     color: whitesmoke;
     text-align: center;

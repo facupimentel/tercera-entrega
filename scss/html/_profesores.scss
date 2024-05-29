@@ -2,17 +2,19 @@
 
 main {
     .texto {
+        box-shadow: 0 0 20px rgba(0 , 0, 0, 0.2);
         h1 {
             color: $color-secundario;
         }
 
-        @include estilos (20px 3px, 2px, 15px);
+        @include estilos (20px 3px, 2px, 18px);
         background-color: $color-principal;
         color: whitesmoke;
         padding: 15px;
     }
 
     .cbum {
+        box-shadow: 0 0 20px rgba(0 , 0, 0, 0.2);
         .card-profe {
             @extend %profes;
             
@@ -53,6 +55,8 @@ main {
     }
 
     .canelo {
+        box-shadow: 0 0 20px rgba(0 , 0, 0, 0.2);
+        margin: 22px 0px;
         .card-profe {
             @extend %profes;
             

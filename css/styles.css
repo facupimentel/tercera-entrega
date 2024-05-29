@@ -19,7 +19,7 @@ main .rutina-dos .texto, main .rutina-uno .texto {
   color: whitesmoke;
   margin: 20px 5px;
   border-radius: 2px;
-  font-size: 13px;
+  font-size: 15px;
   padding: 5px;
 }
 
@@ -28,7 +28,7 @@ main .rutina-dos .tabla-dos table tr td, main .rutina-dos .tabla-dos table .dias
   border: 0.5px solid #242424;
   color: whitesmoke;
   padding: 8px;
-  font-size: 11px;
+  font-size: 12px;
 }
 
 * {
@@ -47,6 +47,7 @@ body {
 
 header {
   background-color: #242424;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 header .bg-navbar .container-fluid .nav-menu .bg-navbar {
   background-color: #242424;
@@ -66,6 +67,9 @@ header .bg-navbar .container-fluid .navbar-logo img {
 main {
   text-align: center;
 }
+main .box-one {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
 main .box-one .texto {
   margin: 40px 10px;
   border-radius: 3px;
@@ -78,6 +82,7 @@ main .box-one .texto h1 {
   color: #A1EF00;
 }
 main .box-one .grid-img {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(3, 34%);
@@ -107,6 +112,7 @@ main .box-one .grid-img .img-seis {
   display: none;
 }
 main .links-pages {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -115,6 +121,7 @@ main .links-pages {
   margin: 40px 0px;
 }
 main .links-pages div {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
   display: flex;
   width: 95%;
   margin: 5px 5px;
@@ -150,6 +157,7 @@ main .links-pages div .link-text a:hover {
 }
 
 .links-pages {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -195,6 +203,7 @@ main .links-pages div .link-text a:hover {
 
 /* PIE DE PAGINA*/
 footer {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
   background-color: #242424;
   color: whitesmoke;
   text-align: center;
@@ -226,7 +235,8 @@ footer div a {
 .galeria .texto {
   margin: 20px 0px;
   border-radius: 2px;
-  font-size: 15px;
+  font-size: 18px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 .galeria .texto h1 {
   background-color: #242424;
@@ -271,6 +281,7 @@ footer div a {
   display: none;
 }
 .galeria div h2 {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
   margin: 20px 3px;
   border-radius: 2px;
   font-size: 20px;
@@ -294,6 +305,7 @@ footer div a {
   grid-column: 2;
 }
 .galeria div h2 {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
   margin: 20px 3px;
   border-radius: 2px;
   font-size: 20px;
@@ -311,15 +323,19 @@ footer div a {
 
 /* PAGE PROFESORES */
 main .texto {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
   margin: 20px 3px;
   border-radius: 2px;
-  font-size: 15px;
+  font-size: 18px;
   background-color: #242424;
   color: whitesmoke;
   padding: 15px;
 }
 main .texto h1 {
   color: #A1EF00;
+}
+main .cbum {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 main .cbum .card-profe img {
   margin: 5px 5px;
@@ -348,6 +364,10 @@ main .fotos-cbum img {
 }
 main .fotos-cbum .cbum-cuatro {
   grid-column: span 3;
+}
+main .canelo {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  margin: 22px 0px;
 }
 main .canelo .card-profe img {
   margin: 5px 5px;
@@ -379,6 +399,9 @@ main .fotos-canelo .canelo-uno {
 }
 
 /* PAGE RUTINA */
+main .texto {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
 main .texto h1 {
   margin: 10px 0px;
   color: #A1EF00;
@@ -386,6 +409,9 @@ main .texto h1 {
 main .texto h2 {
   margin: 15px 0px;
   color: #A1EF00;
+}
+main .rutina-uno {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 main .rutina-uno .tabla-uno {
   display: flex;
@@ -399,6 +425,9 @@ main .rutina-uno .tabla-uno table .dias td {
 }
 main .rutina-uno .tabla-uno table tr {
   border: 0.5px solid;
+}
+main .rutina-dos {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 main .rutina-dos .tabla-dos {
   display: flex;
@@ -433,6 +462,7 @@ main .rutina-dos .tabla-dos table tr {
   padding-bottom: 40px;
 }
 .contactos .inscripcion {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
   display: flex;
   justify-content: center;
   align-items: center;
