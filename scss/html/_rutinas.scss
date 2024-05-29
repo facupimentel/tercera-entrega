@@ -4,25 +4,19 @@ main {
     .texto{
         h1{
         margin: 10px 0px;
-        color: whitesmoke;
+        color: $color-secundario;
         }
 
         h2{
             margin: 15px 0px;
-            color: #A1EF00;
+            color: $color-secundario;
         }
     }
 
 
     .rutina-uno {
-        margin: 20px 0px;
         .texto{
-            background-color: #242424;
-            color: whitesmoke;
-            margin: 20px 5px; 
-            border-radius: 2px;
-            font-size: 13px;
-            padding: 5px;
+            @extend %texto-rutinas;
         }
         .tabla-uno {
             display: flex;
@@ -31,21 +25,14 @@ main {
                 .dias {
                     border: 0.5px solid ;     
                     td {
-                        background-color: #242424;
-                        border: 0.5px solid #242424;
-                        color: #A1EF00;
-                        padding: 8px;
-                        font-size: 13px;  
+                        color: $color-secundario;
+                        @extend %rutina-td;   
                     }
                 }
                 tr {
                     border: 0.5px solid ;  
                     td {
-                        background-color: #242424;
-                        border: 0.5px solid #242424;
-                        color: whitesmoke;
-                        padding: 8px;
-                        font-size: 11px;     
+                        @extend %rutina-td;  
                     }
                 }
             }
@@ -54,13 +41,8 @@ main {
 
     }
     .rutina-dos{
-        .textos{
-            background-color: #242424;
-            color: whitesmoke;
-            margin: 20px 5px; 
-            border-radius: 2px;
-            font-size: 13px;
-            padding: 5px;
+        .texto{
+            @extend %texto-rutinas;
         }
         .tabla-dos {
             display: flex;
@@ -70,22 +52,15 @@ main {
                     border: 0.5px solid ;
                     
                     td {
-                        background-color: #242424;
-                        border: 0.5px solid #242424;
-                        color: #A1EF00;
-                        padding: 8px;
-                        font-size: 13px;  
+                        color: $color-secundario;
+                        @extend %rutina-td;   
                     }
                 }
                 tr {
                     border: 0.5px solid ;
                     
                     td {
-                        background-color: #242424;
-                        border: 0.5px solid #242424;
-                        color: whitesmoke;
-                        padding: 8px;
-                        font-size: 11px;
+                        @extend %rutina-td;  
                         
                     }
                 }

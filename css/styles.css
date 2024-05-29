@@ -1,3 +1,36 @@
+main .canelo .card-profe, main .cbum .card-profe {
+  background-color: #242424;
+  color: whitesmoke;
+  padding: 5px;
+  text-align: start;
+  border-radius: 2px;
+}
+
+.galeria .nike .cuadro-tres, .galeria .adidas .cuadro-dos {
+  margin: 0px 10px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 33%);
+  gap: 5px;
+}
+
+main .rutina-dos .texto, main .rutina-uno .texto {
+  background-color: #242424;
+  color: whitesmoke;
+  margin: 20px 5px;
+  border-radius: 2px;
+  font-size: 13px;
+  padding: 5px;
+}
+
+main .rutina-dos .tabla-dos table tr td, main .rutina-dos .tabla-dos table .dias td, main .rutina-uno .tabla-uno table tr td, main .rutina-uno .tabla-uno table .dias td {
+  background-color: #242424;
+  border: 0.5px solid #242424;
+  color: whitesmoke;
+  padding: 8px;
+  font-size: 11px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -35,10 +68,11 @@ main {
 }
 main .box-one .texto {
   margin: 40px 10px;
+  border-radius: 3px;
+  font-size: 15px;
   background-color: #242424;
   color: whitesmoke;
   padding: 15px;
-  border-radius: 3px;
 }
 main .box-one .texto h1 {
   color: #A1EF00;
@@ -76,7 +110,7 @@ main .links-pages {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-radius: 2px;
+  border-radius: 5px;
   gap: 40px;
   margin: 40px 0px;
 }
@@ -85,11 +119,9 @@ main .links-pages div {
   width: 95%;
   margin: 5px 5px;
   border-radius: 5px;
+  font-size: 12px;
   background-color: #242424;
   color: whitesmoke;
-  font-size: 12px;
-  text-align: center;
-  align-items: center;
 }
 main .links-pages div .link-text {
   display: flex;
@@ -100,8 +132,9 @@ main .links-pages div .link-text h2 {
   font-size: 14px;
 }
 main .links-pages div .link-text img {
-  border-radius: 5px;
   margin: 5px 5px;
+  border-radius: 5px;
+  font-size: 0px;
   width: 95%;
 }
 main .links-pages div .link-text a {
@@ -129,18 +162,18 @@ main .links-pages div .link-text a:hover {
   width: 95%;
   margin: 5px 5px;
   border-radius: 5px;
+  font-size: 0px;
   background-color: #242424;
   color: whitesmoke;
-  font-size: 12px;
-  text-align: center;
   align-items: center;
 }
 .links-pages div h2 {
   font-size: 14px;
 }
 .links-pages div img {
-  border-radius: 5px;
   margin: 5px 5px;
+  border-radius: 5px;
+  font-size: 0px;
   width: 95%;
 }
 .links-pages .container-links .link-text {
@@ -190,11 +223,15 @@ footer div a {
 }
 
 /* PAGE GALERIA */
-.galeria div h1 {
-  margin: 20px 3px;
+.galeria .texto {
+  margin: 20px 0px;
+  border-radius: 2px;
+  font-size: 15px;
+}
+.galeria .texto h1 {
   background-color: #242424;
   color: #A1EF00;
-  padding: 15px;
+  padding: 5px;
   border-radius: 2px;
 }
 .galeria .adidas .cuadro-uno img {
@@ -207,18 +244,15 @@ footer div a {
 }
 .galeria .adidas div h2 {
   margin: 20px 3px;
+  border-radius: 2px;
+  font-size: 20px;
   background-color: #242424;
   color: #A1EF00;
   padding: 15px;
-  border-radius: 2px;
 }
 .galeria .adidas .cuadro-dos {
   height: 130vh;
   margin: 0px 10px;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(3, 33%);
-  gap: 5px;
 }
 .galeria .adidas .cuadro-dos img {
   width: 100%;
@@ -238,18 +272,14 @@ footer div a {
 }
 .galeria div h2 {
   margin: 20px 3px;
+  border-radius: 2px;
+  font-size: 20px;
   background-color: #242424;
   color: #A1EF00;
   padding: 15px;
-  border-radius: 2px;
 }
 .galeria .nike .cuadro-tres {
   height: 100vh;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(3, 33%);
-  margin: 0px 10px;
-  gap: 5px;
 }
 .galeria .nike .cuadro-tres img {
   width: 100%;
@@ -265,10 +295,11 @@ footer div a {
 }
 .galeria div h2 {
   margin: 20px 3px;
+  border-radius: 2px;
+  font-size: 20px;
   background-color: #242424;
   color: #A1EF00;
   padding: 15px;
-  border-radius: 2px;
 }
 .galeria .texto img {
   width: 95%;
@@ -278,20 +309,14 @@ footer div a {
 /* PAGE PROFESORES */
 main .texto {
   margin: 20px 3px;
+  border-radius: 2px;
+  font-size: 12px;
   background-color: #242424;
   color: whitesmoke;
   padding: 15px;
-  border-radius: 2px;
 }
 main .texto h1 {
   color: #A1EF00;
-}
-main .cbum .card-profe {
-  background-color: #242424;
-  color: whitesmoke;
-  padding: 5px;
-  text-align: start;
-  border-radius: 2px;
 }
 main .cbum .card-profe img {
   margin: 5px 5px;
@@ -321,16 +346,6 @@ main .fotos-cbum img {
 main .fotos-cbum .cbum-cuatro {
   grid-column: span 3;
 }
-main .canelo {
-  margin: 25px 0px;
-}
-main .canelo .card-profe {
-  background-color: #242424;
-  color: whitesmoke;
-  padding: 5px;
-  text-align: start;
-  border-radius: 2px;
-}
 main .canelo .card-profe img {
   margin: 5px 5px;
   width: 40%;
@@ -344,6 +359,7 @@ main .canelo .card-profe h2 {
   text-align: center;
 }
 main .fotos-canelo {
+  height: 60vh;
   margin: 5px 5px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -362,22 +378,11 @@ main .fotos-canelo .canelo-uno {
 /* PAGE RUTINA */
 main .texto h1 {
   margin: 10px 0px;
-  color: whitesmoke;
+  color: #A1EF00;
 }
 main .texto h2 {
   margin: 15px 0px;
   color: #A1EF00;
-}
-main .rutina-uno {
-  margin: 20px 0px;
-}
-main .rutina-uno .texto {
-  background-color: #242424;
-  color: whitesmoke;
-  margin: 20px 5px;
-  border-radius: 2px;
-  font-size: 13px;
-  padding: 5px;
 }
 main .rutina-uno .tabla-uno {
   display: flex;
@@ -387,29 +392,10 @@ main .rutina-uno .tabla-uno table .dias {
   border: 0.5px solid;
 }
 main .rutina-uno .tabla-uno table .dias td {
-  background-color: #242424;
-  border: 0.5px solid #242424;
   color: #A1EF00;
-  padding: 8px;
-  font-size: 13px;
 }
 main .rutina-uno .tabla-uno table tr {
   border: 0.5px solid;
-}
-main .rutina-uno .tabla-uno table tr td {
-  background-color: #242424;
-  border: 0.5px solid #242424;
-  color: whitesmoke;
-  padding: 8px;
-  font-size: 11px;
-}
-main .rutina-dos .textos {
-  background-color: #242424;
-  color: whitesmoke;
-  margin: 20px 5px;
-  border-radius: 2px;
-  font-size: 13px;
-  padding: 5px;
 }
 main .rutina-dos .tabla-dos {
   display: flex;
@@ -419,57 +405,37 @@ main .rutina-dos .tabla-dos table .dias {
   border: 0.5px solid;
 }
 main .rutina-dos .tabla-dos table .dias td {
-  background-color: #242424;
-  border: 0.5px solid #242424;
   color: #A1EF00;
-  padding: 8px;
-  font-size: 13px;
 }
 main .rutina-dos .tabla-dos table tr {
   border: 0.5px solid;
 }
-main .rutina-dos .tabla-dos table tr td {
-  background-color: #242424;
-  border: 0.5px solid #242424;
-  color: whitesmoke;
-  padding: 8px;
-  font-size: 11px;
-}
-
 /* PAGE CONTACTOS */
-.contactos {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-}
-.contactos section {
-  display: flex;
-  justify-content: center;
-}
 .contactos section .redes {
-  color: #A1EF00;
-  background-color: #242424;
-  margin: 20px 0px;
+  margin: 20px 3px;
   border-radius: 3px;
-  width: 95%;
+  font-size: 0px;
+  background-color: #242424;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
-.contactos section .redes h1 {
-  padding: 10px;
-  font-size: 20px;
+.contactos section .redes .texto {
+  font-size: 15px;
 }
-.contactos section .redes div {
-  margin: 20px 0px;
+.contactos section .redes .logos {
+  display: flex;
+  margin: 13px 0px;
 }
-.contactos section .redes div a img {
-  width: 15%;
+.contactos section .redes .logos div a img {
+  width: 55%;
+  padding-bottom: 40px;
 }
 .contactos .inscripcion {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 .contactos .inscripcion .formulario {
-  width: 95%;
+  width: 98%;
   align-content: center;
   background-color: #242424;
   color: #A1EF00;
@@ -482,13 +448,14 @@ main .rutina-dos .tabla-dos table tr td {
 }
 .contactos .inscripcion .formulario form {
   display: flex;
-  justify-content: center;
   flex-direction: column;
+  justify-content: center;
 }
 .contactos .inscripcion .formulario form .controles {
-  padding: 5px;
-  border-radius: 20px;
   margin: 15px 0px;
+  border-radius: 20px;
+  font-size: 15px;
+  padding: 5px;
   background-color: #d4d4d4;
 }
 .contactos .inscripcion .formulario form .boton {
@@ -499,7 +466,7 @@ main .rutina-dos .tabla-dos table tr td {
 }
 
 /* MQ tablets */
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 768px) {
   /* inicio */
   main .box-one .texto {
     font-size: 15px;
@@ -530,12 +497,14 @@ main .rutina-dos .tabla-dos table tr td {
     margin: 12px;
   }
   main .links-pages div .link-text h2 {
-    font-size: 15px;
     margin: 12px 0px;
+    border-radius: 0px;
+    font-size: 15px;
   }
   main .links-pages div .link-text a {
-    font-size: 15px;
     margin: 30px 0px;
+    border-radius: 0px;
+    font-size: 15px;
   }
   footer {
     height: 25vh;
@@ -552,6 +521,14 @@ main .rutina-dos .tabla-dos table tr td {
     font-size: 10px;
   }
   /* indumentaria */
+  .galeria .texto {
+    margin: 40px 10px;
+    border-radius: 3px;
+    font-size: 15px;
+  }
+  .galeria .texto h1 {
+    color: #A1EF00;
+  }
   .galeria .adidas .cuadro-uno {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -575,18 +552,29 @@ main .rutina-dos .tabla-dos table tr td {
     width: 80%;
   }
   /* profesores */
+  main .texto {
+    margin: 40px 5px;
+    border-radius: 3px;
+    font-size: 15px;
+  }
+  main .texto h1 {
+    color: #A1EF00;
+  }
   main .cbum .card-profe {
+    display: flex;
+    justify-content: center;
     align-items: center;
-    width: 100%;
   }
   main .cbum .card-profe img {
-    width: 24%;
+    width: 30%;
   }
   main .canelo .card-profe {
-    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   main .canelo .card-profe img {
-    width: 24%;
+    width: 30%;
   }
   main .canelo .fotos-canelo {
     height: 80vh;
@@ -619,19 +607,11 @@ main .rutina-dos .tabla-dos table tr td {
     font-size: 22px;
   }
   /* contactos */
-  .contactos section .redes h1 {
-    padding-top: 25px;
-    font-size: 30px;
-  }
-  .contactos section .redes div {
+  .contactos section .redes .logos {
     display: flex;
   }
-  .contactos section .redes div .logo {
-    display: block;
-  }
-  .contactos section .redes div .logo a img {
-    padding: 15px;
-    width: 60%;
+  .contactos section .redes .logos div a img {
+    width: 30%;
   }
   .contactos .inscripcion .formulario {
     padding: 25px;
@@ -690,7 +670,6 @@ main .rutina-dos .tabla-dos table tr td {
   main .links-pages {
     display: flex;
     flex-direction: row;
-    justify-content: center;
   }
   main .links-pages div {
     width: 90%;
@@ -748,6 +727,7 @@ main .rutina-dos .tabla-dos table tr td {
   }
   .galeria .nike .texto {
     display: flex;
+    justify-content: center;
     align-items: center;
   }
   .galeria .nike .texto p {
@@ -755,36 +735,20 @@ main .rutina-dos .tabla-dos table tr td {
     font-size: 20px;
   }
   /* profesores */
-  main .cbum {
-    display: flex;
-    justify-content: center;
-  }
-  main .cbum .card-profe {
-    width: 35%;
-  }
   main .cbum .card-profe img {
-    margin: 15px;
-    width: 35%;
+    width: 15%;
   }
   main .cbum .fotos-cbum {
-    height: 67vh;
+    height: 80vh;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 50%);
   }
-  main .canelo {
-    display: flex;
-    justify-content: center;
-  }
-  main .canelo .card-profe {
-    width: 35%;
-  }
   main .canelo .card-profe img {
-    margin: 15px;
-    width: 35%;
+    width: 15%;
   }
   main .canelo .fotos-canelo {
-    width: 80vh;
+    height: 80vh;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 50%);
@@ -803,39 +767,26 @@ main .rutina-dos .tabla-dos table tr td {
     padding: 10px;
   }
   /* contactos */
-  .contactos {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    margin: 20px 0px;
-  }
   .contactos section {
     display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .contactos section .redes {
-    width: 100%;
-    height: 100%;
+    width: 95%;
   }
-  .contactos section .redes h1 {
-    font-size: 20px;
-  }
-  .contactos section .redes div {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-  }
-  .contactos section .redes div .logo a img {
+  .contactos section .redes .logos div a img {
     width: 15%;
   }
   .contactos .inscripcion {
     display: flex;
   }
   .contactos .inscripcion .formulario {
-    width: 100%;
-    height: 100%;
+    width: 65%;
     margin: 20px 0px;
-    padding: 25px;
     border-radius: 2px;
+    font-size: 15px;
+    padding: 25px;
   }
   .contactos .inscripcion .formulario h1 {
     font-size: 20px;

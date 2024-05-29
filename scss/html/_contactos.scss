@@ -1,31 +1,25 @@
 /* PAGE CONTACTOS */
 
 .contactos {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+    
     
     section {
-        display: flex;
-        justify-content: center;
         .redes {
-            color: #A1EF00;
-            background-color:#242424 ;
-            margin: 20px 0px;
-            border-radius: 3px;
-            width: 95%;
+            @include estilos (20px 3px, 3px, 0px);
+            background-color:$color-principal ;
             box-shadow: 0 0 20px rgba(0 , 0, 0, 0.2);
-
-            h1 {
-                padding: 10px;
-                font-size: 20px;
+            .texto {
+                font-size: 15px;
             }
-            
-            div {
-                margin: 20px 0px;
-                a {
-                    img {
-                        width: 15%;
+            .logos {
+                display: flex;
+                margin: 13px 0px;
+                div {
+                    a {
+                        img {
+                            width: 55%;
+                            padding-bottom: 40px;
+                        }     
                     }
                 }
             }
@@ -33,13 +27,12 @@
     }
 
     .inscripcion {
-        display: flex;
-        justify-content: center;
+        @include flex-center;
         .formulario {
-            width: 95%;
+            width: 98%;
             align-content: center;
-            background-color: #242424;
-            color: #A1EF00;
+            background-color: $color-principal;
+            color: $color-secundario;
             padding: 25px;
             box-shadow: 0 0 20px rgba(0 , 0, 0, 0.2);
 
@@ -49,21 +42,19 @@
             }
             
             form {     
-                display: flex;
+                @include flex-column;  
                 justify-content: center;
-                flex-direction: column;   
-                .controles {      
-                        padding: 5px;
-                        border-radius: 20px;    
-                        margin: 15px 0px;
-                        background-color: #d4d4d4;                                   
+                .controles {
+                    @include estilos (15px 0px, 20px, 15px);      
+                    padding: 5px;
+                    background-color: #d4d4d4;                                   
                 }
 
                 .boton {
                     padding: 10px;
-                    background-color: #A1EF00;                        
+                    background-color:$color-secundario;                        
                     border-radius: 10px;
-                    color: #242424;
+                    color: $color-principal;
                 }
             }
         }

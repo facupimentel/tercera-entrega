@@ -1,6 +1,11 @@
 //SASS PRINCIPAL
 //mobile first
 
+//import utilidades
+@import "utilidades/variables";
+@import "utilidades/mixin";
+@import "utilidades/extend";
+
 //reset
 * {
     margin: 0;
@@ -52,14 +57,13 @@ main {
     text-align: center;
     .box-one{
         .texto{
-            margin: 40px 10px;
-            background-color: #242424;
+            @include estilos (40px 10px, 3px, 15px);
+            background-color: $color-principal;
             color: whitesmoke;
             padding: 15px;
-            border-radius: 3px;
 
             h1 {
-                color: #A1EF00;
+                color: $color-secundario;
             }
         }
 
@@ -103,24 +107,18 @@ main {
     }
 
     .links-pages{
-        display: flex;
-        flex-direction: column;
+        @include flex-column;
         align-items: center;
-        border-radius: 2px;
+        border-radius: 5px;
         gap: 40px;
         margin: 40px 0px;
 
         div{
             display: flex;
             width: 95%;
-            margin: 5px 5px;
-            border-radius: 5px;
-            background-color: #242424;
+            @include estilos (5px 5px, 5px, 12px);
+            background-color: $color-principal;
             color: whitesmoke;
-            font-size: 12px;
-            text-align: center;
-            align-items: center;
-
             .link-text {
                 display: flex;
                 flex-direction: column;
@@ -129,8 +127,7 @@ main {
                     font-size: 14px;
                 }
                 img {
-                    border-radius: 5px;
-                    margin: 5px 5px;
+                    @include estilos (5px 5px, 5px, 0px);
                     width: 95%;
                 }
 
@@ -142,8 +139,8 @@ main {
                 }
 
                 a:hover {
-                    background-color: #A1EF00;
-                    color: #242424;
+                    background-color: $color-secundario;
+                    color: $color-principal;
                     border-radius: 15px;
                 }
             }
@@ -152,8 +149,7 @@ main {
 }
 
 .links-pages{
-    display: flex;
-    flex-direction: column;
+    @include flex-column;
     align-items: center;
     border-radius: 2px;
     gap: 40px;
@@ -162,12 +158,9 @@ main {
     div{
         display: flex;
         width: 95%;
-        margin: 5px 5px;
-        border-radius: 5px;
+        @include estilos (5px 5px, 5px, 0px);
         background-color: #242424;
         color: whitesmoke;
-        font-size: 12px;
-        text-align: center;
         align-items: center; 
 
         h2{
@@ -175,16 +168,14 @@ main {
         }
 
         img{
-            border-radius: 5px;
-            margin: 5px 5px;
+            @include estilos (5px 5px, 5px, 0px);
             width: 95%;
         }
     }
 
     .container-links{
         .link-text{
-            display: flex;
-            flex-direction: column;
+            @include flex-column;
             margin-right: 15px;
             
             a {
@@ -195,8 +186,8 @@ main {
             }
 
             a:hover {
-                background-color: #A1EF00;
-                color: #242424;
+                background-color: $color-secundario;
+                color: $color-principal;
                 border-radius: 15px;
             }
         }
@@ -207,7 +198,7 @@ main {
 /* PIE DE PAGINA*/
 
 footer {
-    background-color: #242424;
+    background-color: $color-principal;
     color: whitesmoke;
     text-align: center;
     height: 40vh;
@@ -233,7 +224,7 @@ footer {
         a {
             width: 40%;
             text-decoration: none;
-            color: #A1EF00;
+            color: $color-secundario;
         }
     }
 }
@@ -246,7 +237,7 @@ footer {
 
 /* MQ tablets */
 
-@media screen and (min-width:767px) {
+@media screen and (min-width:768px){
 
     /* inicio */
     main {
@@ -279,8 +270,7 @@ footer {
 
         .links-pages {
             div {
-                display: flex;
-                flex-direction: column;
+                @include flex-column;
                 width: 70%;
                 .link-img {
                     img {
@@ -291,13 +281,11 @@ footer {
 
                 .link-text{
                     h2 {
-                        font-size: 15px;
-                        margin: 12px 0px;
+                        @include estilos (12px 0px, 0px, 15px )
                     }
 
                     a {
-                        font-size: 15px;
-                        margin: 30px 0px;
+                        @include estilos (30px 0px, 0px, 15px )
                     }
                 }
             }
@@ -332,6 +320,12 @@ footer {
     /* indumentaria */
 
     .galeria {
+        .texto {
+            h1 {
+                color:$color-secundario ;
+            }
+            @include estilos (40px 10px, 3px, 15px);
+        }
         .adidas{
             .cuadro-uno {
                 display: grid;
@@ -372,21 +366,26 @@ footer {
     /* profesores */
 
     main {
+        .texto {
+            h1 {
+                color:$color-secundario ;
+            }
+            @include estilos (40px 5px, 3px, 15px);
+        }
         .cbum {
             .card-profe {
-                align-items: center;
-                width: 100%;
+                @include flex-center;
                 img {
-                    width: 24%;
+                    width: 30%;
                 }
             }
         }
 
         .canelo {
             .card-profe {
-                width: 100%;
+                @include flex-center;
                 img {
-                    width: 24%;
+                    width: 30%;
                 }
             }
 
@@ -418,7 +417,6 @@ footer {
                 .texto {
                     font-size: 15px;
                 }
-
                 .tabla-uno {
                     table {
                         .dias {
@@ -435,7 +433,6 @@ footer {
                     }
                 }
             }
-
             .rutina-dos {
                 .tabla-dos {
                     table {
@@ -460,21 +457,15 @@ footer {
     .contactos {
         section{
             .redes {
-                h1 {
-                    padding-top: 25px;
-                    font-size: 30px;
-                }
-                div {
+                .logos {
                     display: flex;
-                    .logo {
-                        display: block;
-                        a {
-                            img {
-                                padding: 15px;
-                                width: 60%;
+                     div {
+                         a {
+                            img {    
+                                 width: 30%;
                             }
                         }
-                    }
+                     }
                 }
 
             }
@@ -511,9 +502,7 @@ footer {
 
     main {
         .box-one {
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            @include flex-center;
             
             .texto {
                 width: 60%;
@@ -558,7 +547,6 @@ footer {
         .links-pages {
             display: flex;
             flex-direction: row;
-            justify-content: center;
             div{ 
                 width: 90%;
                 .link-img {
@@ -593,10 +581,7 @@ footer {
             }
 
             .cuadro-dos {
-                height: 80vh;
-                display:grid;
-                grid-template-columns: repeat(4, 1fr) ;
-                grid-template-rows: repeat(2, 50%) ;
+                @include grid;
 
                 .dos-img-dos {
                     grid-column: span 1;
@@ -610,11 +595,7 @@ footer {
         }
         .nike {
             .cuadro-tres {
-                height: 80vh;
-                display: grid;
-                grid-template-columns: repeat(4, 1fr) ;
-                grid-template-rows: repeat(2, 50%) ;
-
+                @include grid;
                 .tres-img-uno {
                     grid-row: span 2;
                 }
@@ -631,8 +612,7 @@ footer {
             }
 
             .texto {
-                display: flex;
-                align-items: center;
+                @include flex-center;
                 p {
                     padding: 15px;
                     font-size: 20px;
@@ -645,40 +625,27 @@ footer {
 
     main {
         .cbum {
-            display: flex;
-            justify-content: center;
             .card-profe {
-                width: 35%;
                 img {
-                    margin: 15px;
-                    width: 35%;
+                    width: 15%;
                 }
+
+            
             }
             .fotos-cbum {
-                height: 67vh;
-                display: grid;
-                grid-template-columns: repeat(3, 1fr) ;
-                grid-template-rows: repeat(2, 50%);
+                @include grid-profes;
             }
         }
 
         .canelo {
-           display: flex;
-           justify-content: center;
-           
            .card-profe {
-            width: 35%;
             img {
-                margin: 15px;
-                width: 35%;
+                width: 15%;
             }
            }
 
            .fotos-canelo {
-                width: 80vh;
-                display: grid;
-                grid-template-columns: repeat(3, 1fr) ;
-                grid-template-rows: repeat(2, 50%);
+            @include grid-profes;
            }
             
         }
@@ -705,7 +672,6 @@ footer {
                 }
             }
         }
-
         .rutina-dos {
             .tabla-dos{
                 table{
@@ -727,42 +693,29 @@ footer {
     /* contactos */
 
     .contactos {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        margin: 20px 0px;
+
         section {
-            display: flex;
-            
+            @include flex-center; 
             .redes {
-                width: 100%;
-                height: 100%;
-                h1 {
-                    font-size: 20px;
-                }
-                div {
-                    align-items: center;
-                    display: flex;
-                    flex-direction: column;
-                    .logo {
-                        a {
-                            img {
-                                width: 15%;
+                width: 95%;
+                    .logos {
+                        div {
+                            a {
+                                img {
+                                    width: 15%;
+                                }
                             }
                         }
                     }
-                }
             }
         }
 
         .inscripcion {
             display: flex;
             .formulario {
-                width: 100%;
-                height: 100%;
-                margin: 20px 0px;
+                width: 65%;
+                @include estilos(20px 0px, 2px, 15px);
                 padding: 25px;
-                border-radius: 2px;
                 h1 {
                     font-size: 20px; 
                 }
