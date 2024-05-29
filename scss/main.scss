@@ -57,7 +57,7 @@ main {
     text-align: center;
     .box-one{
         .texto{
-            @include estilos (40px 10px, 3px, 15px);
+            @include estilos (40px 10px, 3px, 18px);
             background-color: $color-principal;
             color: whitesmoke;
             padding: 15px;

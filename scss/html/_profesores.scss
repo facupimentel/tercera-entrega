@@ -6,7 +6,7 @@ main {
             color: $color-secundario;
         }
 
-        @include estilos (20px 3px, 2px, 12px);
+        @include estilos (20px 3px, 2px, 15px);
         background-color: $color-principal;
         color: whitesmoke;
         padding: 15px;

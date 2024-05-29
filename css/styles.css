@@ -69,7 +69,7 @@ main {
 main .box-one .texto {
   margin: 40px 10px;
   border-radius: 3px;
-  font-size: 15px;
+  font-size: 18px;
   background-color: #242424;
   color: whitesmoke;
   padding: 15px;
@@ -301,6 +301,9 @@ footer div a {
   color: #A1EF00;
   padding: 15px;
 }
+.galeria .texto {
+  font-size: 15px;
+}
 .galeria .texto img {
   width: 95%;
   border-radius: 2px;
@@ -310,7 +313,7 @@ footer div a {
 main .texto {
   margin: 20px 3px;
   border-radius: 2px;
-  font-size: 12px;
+  font-size: 15px;
   background-color: #242424;
   color: whitesmoke;
   padding: 15px;
