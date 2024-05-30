@@ -67,7 +67,6 @@ main {
   text-align: center;
 }
 main .box-one .texto {
-  box-shadow: 0 0 20px rgb(0, 0, 0);
   margin: 40px 10px;
   border-radius: 3px;
   font-size: 17px;
@@ -154,7 +153,6 @@ main .links-pages div .link-text a:hover {
 
 /* PIE DE PAGINA*/
 footer {
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
   background-color: #242424;
   color: whitesmoke;
   text-align: center;
