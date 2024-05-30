@@ -47,10 +47,10 @@ main {
         .tabla-dos {
             display: flex;
             justify-content: center;
+            
             table { 
                 .dias {
                     border: 0.5px solid ;
-                    
                     td {
                         color: $color-secundario;
                         @extend %rutina-td;   

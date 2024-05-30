@@ -57,8 +57,8 @@ main {
     text-align: center;
     .box-one{
         .texto{
-            box-shadow: 0 0 20px rgba(0 , 0, 0, 3);
-            @include estilos (40px 10px, 3px, 19px);
+            box-shadow: 0 0 20px rgba(0 , 0, 0, );
+            @include estilos (40px 10px, 3px, 17px);
             background-color: $color-principal;
             color: whitesmoke;
             padding: 15px;
@@ -110,34 +110,37 @@ main {
     .links-pages{
         @include flex-column;
         align-items: center;
-        border-radius: 5px;
+        border-radius: 2px;
         gap: 40px;
         margin: 40px 0px;
-
 
         div{
             display: flex;
             width: 95%;
-            @include estilos (5px 5px, 5px, 12px);
-            background-color: $color-principal;
+            @include estilos (5px 5px, 5px, 0px);
+            background-color: #242424;
             color: whitesmoke;
-            .link-text {
-                display: flex;
-                flex-direction: column;
-                margin-right: 15px;
-                h2 {
-                    font-size: 14px;
-                }
+            align-items: center;
+
+            .link-img{
                 img {
                     @include estilos (5px 5px, 5px, 0px);
                     width: 95%;
                 }
-
-                a {
-                    text-decoration: none;
-                    color: whitesmoke;
+            }
+            .link-text {
+                @include flex-column;
+                margin-right: 15px;
+                h2 {
+                    font-size: 14px;
+                }
+                
+                a{
+                    color: white;
+                    font-size: 15px;
                     width: 60%;
-                    padding: 12px
+                    text-decoration: none;
+                    padding: 15px;
                 }
 
                 a:hover {
@@ -149,54 +152,7 @@ main {
         }
     }
 }
-
-.links-pages{
-    box-shadow: 0 0 20px rgba(0 , 0, 0, 0.2);
-    @include flex-column;
-    align-items: center;
-    border-radius: 2px;
-    gap: 40px;
-    margin: 40px 0px;
     
-    div{
-        display: flex;
-        width: 95%;
-        @include estilos (5px 5px, 5px, 0px);
-        background-color: #242424;
-        color: whitesmoke;
-        align-items: center; 
-
-        h2{
-            font-size: 14px;
-        }
-
-        img{
-            @include estilos (5px 5px, 5px, 0px);
-            width: 95%;
-        }
-    }
-
-    .container-links{
-        .link-text{
-            @include flex-column;
-            margin-right: 15px;
-            
-            a {
-                text-decoration: none;
-                color: whitesmoke;
-                width: 60%;
-                padding: 12px
-            }
-
-            a:hover {
-                background-color: $color-secundario;
-                color: $color-principal;
-                border-radius: 15px;
-            }
-        }
-    }
-        
-}
 
 /* PIE DE PAGINA*/
 

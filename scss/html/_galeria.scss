@@ -7,7 +7,7 @@
             padding: 5px;
             border-radius: 2px;     
         }
-        @include estilos(20px 0px, 2px, 19px);
+        @include estilos(20px 0px, 2px, 17px);
         box-shadow: 0 0 20px rgba(0 , 0, 0, 0.2);
     }
 
@@ -96,7 +96,7 @@
     }
 
     .texto {
-        font-size: 19px;
+        font-size: 17px;
         img {
             width: 95%;
             border-radius: 2px;

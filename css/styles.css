@@ -27,8 +27,8 @@ main .rutina-dos .tabla-dos table tr td, main .rutina-dos .tabla-dos table .dias
   background-color: #242424;
   border: 0.5px solid #242424;
   color: whitesmoke;
-  padding: 10px;
-  font-size: 11px;
+  padding: 9px;
+  font-size: 12px;
 }
 
 * {
@@ -70,7 +70,7 @@ main .box-one .texto {
   box-shadow: 0 0 20px rgb(0, 0, 0);
   margin: 40px 10px;
   border-radius: 3px;
-  font-size: 19px;
+  font-size: 17px;
   background-color: #242424;
   color: whitesmoke;
   padding: 15px;
@@ -111,7 +111,7 @@ main .links-pages {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-radius: 5px;
+  border-radius: 2px;
   gap: 40px;
   margin: 40px 0px;
 }
@@ -120,9 +120,16 @@ main .links-pages div {
   width: 95%;
   margin: 5px 5px;
   border-radius: 5px;
-  font-size: 12px;
+  font-size: 0px;
   background-color: #242424;
   color: whitesmoke;
+  align-items: center;
+}
+main .links-pages div .link-img img {
+  margin: 5px 5px;
+  border-radius: 5px;
+  font-size: 0px;
+  width: 95%;
 }
 main .links-pages div .link-text {
   display: flex;
@@ -132,64 +139,14 @@ main .links-pages div .link-text {
 main .links-pages div .link-text h2 {
   font-size: 14px;
 }
-main .links-pages div .link-text img {
-  margin: 5px 5px;
-  border-radius: 5px;
-  font-size: 0px;
-  width: 95%;
-}
 main .links-pages div .link-text a {
-  text-decoration: none;
-  color: whitesmoke;
+  color: white;
+  font-size: 15px;
   width: 60%;
-  padding: 12px;
+  text-decoration: none;
+  padding: 15px;
 }
 main .links-pages div .link-text a:hover {
-  background-color: #A1EF00;
-  color: #242424;
-  border-radius: 15px;
-}
-
-.links-pages {
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border-radius: 2px;
-  gap: 40px;
-  margin: 40px 0px;
-}
-.links-pages div {
-  display: flex;
-  width: 95%;
-  margin: 5px 5px;
-  border-radius: 5px;
-  font-size: 0px;
-  background-color: #242424;
-  color: whitesmoke;
-  align-items: center;
-}
-.links-pages div h2 {
-  font-size: 14px;
-}
-.links-pages div img {
-  margin: 5px 5px;
-  border-radius: 5px;
-  font-size: 0px;
-  width: 95%;
-}
-.links-pages .container-links .link-text {
-  display: flex;
-  flex-direction: column;
-  margin-right: 15px;
-}
-.links-pages .container-links .link-text a {
-  text-decoration: none;
-  color: whitesmoke;
-  width: 60%;
-  padding: 12px;
-}
-.links-pages .container-links .link-text a:hover {
   background-color: #A1EF00;
   color: #242424;
   border-radius: 15px;
@@ -229,7 +186,7 @@ footer div a {
 .galeria .texto {
   margin: 20px 0px;
   border-radius: 2px;
-  font-size: 19px;
+  font-size: 17px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 .galeria .texto h1 {
@@ -307,7 +264,7 @@ footer div a {
   padding: 15px;
 }
 .galeria .texto {
-  font-size: 19px;
+  font-size: 17px;
 }
 .galeria .texto img {
   width: 95%;
@@ -318,7 +275,7 @@ footer div a {
 main .texto {
   margin: 20px 3px;
   border-radius: 2px;
-  font-size: 19px;
+  font-size: 17px;
   background-color: #242424;
   color: whitesmoke;
   padding: 15px;
