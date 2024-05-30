@@ -2,7 +2,6 @@
 
 main {
     .texto{
-        box-shadow: 0 0 20px rgba(0 , 0, 0, 0.2);
         h1{
         margin: 10px 0px;
         color: $color-secundario;
@@ -16,7 +15,6 @@ main {
 
 
     .rutina-uno {
-        box-shadow: 0 0 20px rgba(0 , 0, 0, 0.2);
         .texto{
             @extend %texto-rutinas;
         }
@@ -43,7 +41,6 @@ main {
 
     }
     .rutina-dos{
-        box-shadow: 0 0 20px rgba(0 , 0, 0, 0.2);
         .texto{
             @extend %texto-rutinas;
         }

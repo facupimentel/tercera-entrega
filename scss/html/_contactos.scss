@@ -5,12 +5,9 @@
     
     section {
         .redes {
-            @include estilos (20px 3px, 3px, 0px);
+            @include estilos (20px 3px, 3px, 19px);
             background-color:$color-principal ;
             box-shadow: 0 0 20px rgba(0 , 0, 0, 0.2);
-            .texto {
-                font-size: 15px;
-            }
             .logos {
                 display: flex;
                 margin: 13px 0px;
@@ -27,7 +24,6 @@
     }
 
     .inscripcion {
-        box-shadow: 0 0 20px rgba(0 , 0, 0, 0.2);
         @include flex-center;
         .formulario {
             width: 98%;
@@ -35,7 +31,6 @@
             background-color: $color-principal;
             color: $color-secundario;
             padding: 25px;
-            box-shadow: 0 0 20px rgba(0 , 0, 0, 0.2);
 
             h1 {
                 padding: 10px;
