@@ -51,6 +51,10 @@ header {
 header .bg-navbar .container-fluid .nav-menu .bg-navbar {
   background-color: #242424;
 }
+header .bg-navbar .container-fluid .nav-menu .bg-navbar li a:hover {
+  background-color: #A1EF00;
+  color: #242424;
+}
 header .bg-navbar .container-fluid .nav-menu .navbar-nav {
   margin: 0px 20px;
   gap: 15px;

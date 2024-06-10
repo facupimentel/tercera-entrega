@@ -31,7 +31,13 @@ header {
         .container-fluid{
             .nav-menu {
                 .bg-navbar{ 
-                     background-color: #242424;
+                    background-color: #242424;
+                    li{
+                        a:hover{
+                            background-color: $color-secundario;
+                            color: #242424;
+                        }
+                    }
                 }
                 .navbar-nav {
                     margin: 0px 20px;
